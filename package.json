@@ -2,11 +2,12 @@
   "name": "esy-gmp",
   "version": "6.2.1000",
   "description": "GMP packaged for esy",
-  "source": "https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz#0578d48607ec0e272177d175fd1807c30b00fdf2",
+  "source": "https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz#sha1:b4043dd2964ab1a858109da85c44de224384f352",
   "override": {
     "buildsInSource": true,
     "build": [
       "find ./ -exec touch -t 200905010101 {} +",
+      "patch -p1 configure gcc.15.patch",
       "./configure --enable-fat --prefix=#{self.install} #{os == 'windows' ? '--host x86_64-w64-mingw32' : ''} --with-pic",
       "make -j4"
     ],
