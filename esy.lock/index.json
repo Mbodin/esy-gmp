@@ -1,0 +1,26 @@
+{
+  "checksum": "0cc961f41dbf4ff5ab5654751a4ba36e",
+  "root": "esy-gmp@link-dev:./package.json",
+  "node": {
+    "esy-gmp@link-dev:./package.json": {
+      "id": "esy-gmp@link-dev:./package.json",
+      "name": "esy-gmp",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": [],
+      "available": [
+        [ "darwin", "x86_64" ],
+        [ "darwin", "arm64" ],
+        [ "linux", "x86_64" ],
+        [ "windows", "x86_64" ]
+      ]
+    }
+  },
+  "platformSpecific": {}
+}
